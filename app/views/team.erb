@@ -1,13 +1,19 @@
-<h1><%= @team.name %></h1>
-<br>
-<h2>Team Motto: <%= @team.motto %></h2>
-<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Superhero Team</title>
+</head>
+<body>
 
-<% @members.each do |member| %>
-  <div>
-  <h2>Hero Name: <%= member.name %></h2>
-  <br>
-  <h3>Hero power: <%= member.power %></h3>
-  <h3>Hero biography: <%= member.bio %></h3>
-  </div><br>
-<% end %>
+  <h1>Team <%= @team.name %></h1><br>
+  <h2>Team Motto: <%= @team.motto %></h2><br>
+
+    <% @members.each do |member| %>
+     <h2>Hero Name: <%= member.name %></h2><br>
+     <h3>Hero power: <%= member.power %></h3><br>
+     <h3>Hero biography: <%= member.bio %></h3><br><br>
+    <% end %>
+  
+</body>
+</html>
